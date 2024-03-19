@@ -1,7 +1,9 @@
 package hello.hellojpa.member;
 
-import java.util.*;
+import org.springframework.stereotype.Component;
 
+import java.util.*;
+@Component
 public class MemberRepositoryImpl implements MemberRepository{
     private static Map<Long, Member> store = new HashMap<>();
     private static long sequence = 0L;

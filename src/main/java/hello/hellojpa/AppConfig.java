@@ -11,15 +11,15 @@ import hello.hellojpa.order.OrderServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class AppConfig {
     @Bean
-    private MemberRepository memberRepository(){
+    public MemberRepository memberRepository(){
         return new MemberRepositoryImpl();
     }
 
     @Bean
-    private DiscountPolicy discountPolicy() {
+    public DiscountPolicy discountPolicy() {
         return new FixDiscountPolicy();
     }
 
