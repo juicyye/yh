@@ -14,4 +14,6 @@ public class MainApp {
         Member member1 = new Member("member1", Grade.VIP);
         memberService.join(member1);
     }
+
+
 }
